@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  k6:
+    image: loadimpact/k6
+    volumes:
+      - ./test-home.js:/scripts/test-home.js
+    command: run /scripts/test-home.js
+
